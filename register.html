@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สมัครสมาชิก</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .register-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    .register-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .register-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .register-box button {
+      width: 100%;
+      padding: 12px;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .register-box button:hover {
+      background: #218838;
+    }
+    .register-box .login-link {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    .register-box .login-link a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    .register-box .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-box">
+    <h2>📋 สมัครสมาชิก</h2>
+    <form action="register_user.php" method="POST">
+      <input type="text" name="username" placeholder="ชื่อผู้ใช้" required>
+      <input type="email" name="email" placeholder="อีเมล" required>
+      <input type="password" name="password" placeholder="รหัสผ่าน" required>
+      <input type="password" name="confirm_password" placeholder="ยืนยันรหัสผ่าน" required>
+      <button type="submit">สมัครสมาชิก</button>
+    </form>
+    <div class="login-link">
+      มีบัญชีแล้ว? <a href="login.html">เข้าสู่ระบบ</a>
+    </div>
+  </div>
+
+</body>
+</html>
